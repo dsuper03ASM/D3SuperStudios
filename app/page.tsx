@@ -14,6 +14,7 @@ export default function Home() {
       icon: <Code className="w-8 h-8" />,
       title: "Full Stack Development",
       description: "Complete web applications using React, Next.js, Node.js, and modern frameworks"
+      
     },
     {
       icon: <Cloud className="w-8 h-8" />,
