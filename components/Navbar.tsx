@@ -16,7 +16,7 @@ export const Navbar = () => {
       >
         <div className="bg-black/20 backdrop-blur-xl border border-white/10 rounded-2xl px-8 py-4 shadow-2xl">
           <div className="flex items-center justify-between">
-            <div className="text-white font-bold text-xl">D3Studio</div>
+            <div className="text-white font-bold text-xl ml-20 bg-red-800">D3Studio</div>
             
             <div className="hidden md:flex items-center space-x-8">
               {navItems.map((item) => (
