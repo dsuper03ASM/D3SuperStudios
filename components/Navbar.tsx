@@ -2,6 +2,7 @@ import { navItems } from '@/data/services'
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react';
 import React from 'react'
+import { Button } from './ui/button';
 
 export const Navbar = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
@@ -18,7 +19,7 @@ export const Navbar = () => {
           <div className="flex items-center justify-between">
             <div className="text-white font-bold text-xl ml-2">D3Studio</div>
             
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden md:flex items-center space-x-8 ml-8">
               {navItems.map((item) => (
                 <a
                   key={item.name}
@@ -30,10 +31,10 @@ export const Navbar = () => {
               ))}
               <motion.button
                 whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white text-black px-6 py-2 rounded-xl text-sm font-semibold transition-all duration-300"
+                whileTap={{  scale: 0.95 }}
+                className="bg-white  bg-gradient-to-tl from-purple-400 to-lime-400 text-black px-6 py-2 rounded-xl text-sm font-semibold transition-all duration-300"
               >
-                Get Started
+                Get Started 
               </motion.button>
             </div>
 
@@ -62,7 +63,7 @@ export const Navbar = () => {
                   {item.name}
                 </a>
               ))}
-              <button className="w-full bg-white text-black px-6 py-2 rounded-xl text-sm font-semibold mt-4">
+              <button className="w-full bg-red-400 text-white px-6 py-2 rounded-xl text-sm font-semibold mt-4">
                 Get Started
               </button>
             </motion.div>
