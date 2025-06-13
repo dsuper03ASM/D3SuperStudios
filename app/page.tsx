@@ -1,4 +1,5 @@
 "use client";
+
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
@@ -11,14 +12,19 @@ import { AnimatedBackground } from "@/components/Animatedbackgroiund";
 export default function Home() {
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
+      {/* Optimized Background */}
       <AnimatedBackground />
-      <Navbar />
-      <Hero />
-      <Section />
-      <Companies />
-      <Testimonial />
-      <Faq />
-      <Footer />
+
+      {/* Content with proper z-index layering */}
+      <div className="">
+        <Navbar />
+        <Hero />
+        <Section />
+        <Companies />
+        <Testimonial />
+        <Faq />
+        <Footer />
+      </div>
     </div>
   );
 }

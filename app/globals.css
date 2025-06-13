@@ -112,6 +112,37 @@
   --sidebar-ring: oklch(0.553 0.013 58.071);
 }
 
+/* Add to your globals.css for better performance */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* GPU acceleration for smooth animations */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Optimize background rendering */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
+/* Reduce paint operations */
+[class*="blur-"] {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
