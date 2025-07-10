@@ -1,27 +1,19 @@
 "use client";
 
 import { Navbar } from "@/components/Navbar";
-import { Hero } from "@/components/Hero";
-import { Section } from "@/components/Section";
-import { Companies } from "@/components/Companies";
-import { Testimonial } from "@/components/Testimonial";
-import Faq from "@/components/Faq";
+import { Portfolio } from "@/components/Portfolio";
 import { Footer } from "@/components/Footer";
 import { AnimatedBackground } from "@/components/Animatedbackgroiund";
 
-export default function Home() {
+export default function PortfolioPage() {
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
       <AnimatedBackground />
       <div className="relative z-10">
         <Navbar />
-        <Hero />
-        <Section />
-        <Companies />
-        <Testimonial />
-        <Faq />
+        <Portfolio />
         <Footer />
       </div>
     </div>
   );
-}
+} 
