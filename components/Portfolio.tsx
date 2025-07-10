@@ -4,20 +4,20 @@ const portfolios = [
   {
     name: "Anirban Ghosh",
     url: "https://anirban-three.vercel.app/",
-    description: "Creative developer specializing in 3D web experiences and interactive designs. Pushing the boundaries of web technology with Three.js and WebGL.",
-    role: "3D Web Developer"
+    description: "Creative developer specializing in Frontend web experiences and interactive designs. Pushing the boundaries of web technology with React, Next.js, Three.js and Figma.",
+    role: "Frontend Developer + UI/UX Designer"
   },
   {
     name: "Mohak",
     url: "https://mochak.me/",
     description: "Full-stack developer crafting beautiful, performant web applications. Focused on creating seamless user experiences with modern technologies.",
-    role: "Full Stack Developer"
+    role: "Full Stack Backend Developer"
   },
   {
     name: "Swarnendu Ghosh",
     url: "https://swarnendu.me",
-    description: "Innovative developer combining technical expertise with creative design. Building next-generation web experiences with cutting-edge tools.",
-    role: "Creative Developer"
+    description: "Full-stack developer crafting beautiful, performant web applications. Focused on creating seamless user experiences with modern technologies with end to end deployment and monitoring.",
+    role: "Full Stack Developer with DevOps"
   }
 ];
 

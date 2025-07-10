@@ -48,6 +48,7 @@ export const Hero = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="group relative bg-white text-black px-10 py-5 rounded-2xl text-lg font-semibold flex items-center gap-3 transition-all duration-300 shadow-2xl hover:shadow-white/25"
+              onClick={() => window.open('https://cal.com/dsuper03/30min', '_blank')}
             >
               Start Your Project
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -57,6 +58,7 @@ export const Hero = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="group relative border border-white/20 text-white px-10 py-5 rounded-2xl text-lg font-medium backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
+              onClick={() => window.open('/portfolio', '_blank')}
             >
               View Our Portfolio
             </motion.button>

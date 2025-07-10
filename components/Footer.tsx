@@ -4,7 +4,7 @@ import React from 'react'
 export const Footer = () => {
   return (
     <div>
-        <section id="contact" className="py-32 px-4 relative">
+        <section id="contact" className="py-20 px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -22,6 +22,7 @@ export const Footer = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="bg-white text-black px-12 py-6 rounded-2xl text-xl font-semibold transition-all duration-300 shadow-2xl hover:shadow-white/25"
+              onClick={() => window.open('https://cal.com/dsuper03/30min', '_blank')}
             >
               Start Your Project
             </motion.button>
@@ -30,7 +31,8 @@ export const Footer = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
               className="border border-white/20 text-white px-12 py-6 rounded-2xl text-xl font-medium backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
-            >
+              onClick={() => window.open('https://cal.com/dsuper03/15min', '_blank')}
+             >
               Schedule a Call
             </motion.button>
           </div>
